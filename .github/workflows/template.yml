@@ -36,7 +36,7 @@ jobs:
           fi
           
       - name: "Copying issues over"
-        run: .github/template/cpissues.sh
+        run: bash .github/template/cpissues.sh
         
       - name: "List the issues copied"
         run: gh issue list -s all
