@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- TODO: Please update the title of this HTML page according to your needs. -->
-    <title>TW 2023 Homework 3</title>
-    <script src="scripts/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather Search</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-   <div id="root"></div>
+    <h1 class="app-title">Weather App</h1>
+    
+    <div class="search-container">
+        <input type="text" id="city-search" placeholder="Search for a city...">
+        <ul id="suggestions"></ul>
+        <ul id="favorites-list"></ul>
+    </div>
+    
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <div id="weather-card" class="weather-card" style="display: none;">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="sky-condition"></p>
+        <p id="humidity"></p>
+        <div id="forecast"></div>
+        <button id="favorite-btn" title="Add to favorites">❤️</button>
+    </div>
+    
+    <script src="scripts/index.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
